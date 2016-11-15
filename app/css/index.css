@@ -1,0 +1,136 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+  color: #666;
+  font-size: 1.6em;
+}
+
+#toutiao_H {
+  width: 100%;
+  border: 1px solid yellow;
+}
+
+#gjNew2 {
+  width: 100%;
+}
+
+#gjNew2 ul {
+  width: 100%;
+}
+
+#gjNew2 ul li {
+  width: 100%;
+}
+
+#gjNew2 ul li a {
+  width: 100%;
+  display: block;
+}
+
+#gjNew2 ul li a div {
+  width: 100%;
+  display: flex;
+}
+
+#gjNew2 ul li a div div:nth-child(1) {
+  display: flex;
+  flex: 1.3;
+  border: 1px solid yellow;
+}
+
+#gjNew2 ul li a div div:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+}
+
+#gjNew2 ul li a div div:nth-child(2) {
+  display: flex;
+  flex: 2.7;
+  border: 1px solid red;
+}
+
+#gjNew2 ul li a div div:nth-child(2) h3 {
+  height: 3em;
+  font-size: 2em;
+}
+
+/*体育新闻css*/
+section {
+  width: 100%;
+}
+
+section #tiyu_T {
+  display: flex;
+}
+
+section #tiyu_T span {
+  display: flex;
+  height: 4em;
+  align-items: center;
+}
+
+section #tiyu_T span:nth-child(1) {
+  flex: 6;
+}
+
+section #tiyu_T span:nth-child(1) a {
+  font-size: 2.6em;
+  color: #129bf0;
+  font-weight: 600;
+}
+
+section #tiyu_T span:nth-child(2) {
+  flex: 1.5;
+}
+
+section #tiyu_T span:nth-child(2) a {
+  font-size: 2em;
+  color: #129bf0;
+  font-weight: 600;
+}
+
+section #tiyu_T span:nth-child(3) {
+  flex: 1.5;
+}
+
+section #tiyu_T span:nth-child(3) a {
+  font-size: 2em;
+  color: #129bf0;
+  font-weight: 600;
+}
+
+section #tiyu_T span:nth-child(4) {
+  flex: 1.5;
+}
+
+section #tiyu_T span:nth-child(4) a {
+  font-size: 2em;
+  color: #129bf0;
+  font-weight: 600;
+}
+
+section #tiyu_M {
+  width: 100%;
+  height: 215px;
+  border: 1px solid green;
+}
+
+section #tiyu_M .swiper-wrapper {
+  width: 100%;
+}
+
+section #tiyu_M .swiper-wrapper .swiper-slide {
+  border: 1px solid red;
+}
+
+section #tiyu_M .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+}

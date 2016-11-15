@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>果粉api</title>
+	    <link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/new.mins.css"/>
+	</head
+	<body>
+		<header>
+			
+		</header>
+		<nav id="nav">
+			 
+		</nav>
+		<section id="content">
+			     <!--<ul class="gjNew">
+			     	<li>
+			     		 <div>
+			     		 	    <h3><a href="#">4个字解读习近平个字解读习近习近平个字解读习近平习近平个字解读习近平平个字解读习近平个字解读习近平个字解读习近平</a></h3>
+			     		 	    <p><span>来源</span></p>
+			     		 </div>
+			     		 <div>
+			     		 	   <img src="img/mm004.jpg" />
+			     		 </div>
+			     	</li>
+			     </ul>-->
+		</section>
+	</body>
+	   <script src="js/swiper.js"></script>
+	   <script src="js/zepto.js"></script>
+	   <script src="lis/jquery.js"></script>
+	   <script>
+	              jQuery(document).ready(function(){
+	              	 
+	               	      $.ajax({
+	   	      	        	type:"get",
+	   	      	        	url:"http://apis.baidu.com/txapi/apple/apple",
+	   	      	        	headers:{
+	   	      	        		 apikey:"89646a0bc91f88fa1574b6106657faa5",
+	   	      	        	},
+	   	      	        	data:{
+	   	      	        		num:10, 
+	   	      	        	},
+	   	      	        	success:function(res){
+//	   	      	        		  console.log(res);
+   	      	        		  
+	   	      	        	var $content=$('#content');	
+	   	      	        	var $ul=$('<ul/>').appendTo($content);
+//	   	      	        	console.log($content);	  
+	   	      	        		     res.newslist.forEach(function(item,idex){
+	   	      	        		     	   console.log(item);
+	   	      	        		     	  var $li=$('<li/>').appendTo($ul);
+	   	      	        		     	   
+	   	      	        		     	   $('<a href="'+item.url+'">'+item.title+'</a>').appendTo($li);
+	   	      	        		     	   $('<div/>').html(item.ctime).appendTo($li);
+	   	      	        		     	   
+	   	      	        		     	   $('<div/>').html(item.description).appendTo($li);
+	   	      	        		     	   
+	   	      	        		     	   $('<div/>').html('<img src="'+item.picUrl+'"/>').appendTo($li);
+	   	      	        		     	   
+	   	      	        		     	   
+	   	      	        		     })
+	   	      	        		     
+	   	      	        	}
+	   	      	        });
+	               	
+	               })
+	   	      	       
+	   	      
+	   </script>
+</html>

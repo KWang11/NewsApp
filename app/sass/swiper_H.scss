@@ -1,0 +1,369 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+//  font-size: 62.5%;
+}
+a{
+    color: #666;
+    font-size: 1.6em;
+    text-decoration: none;
+}
+
+.ad_top{
+     width: 100%;
+     a{
+         display: block;
+         width: 100%;
+          img{
+               width:100%;
+               height:120px;
+          }
+     }
+}
+.nav,.nav2{
+     width: 100%;
+     display: flex;
+       span{
+              display: flex;
+              width: 100%;
+              flex: 1;
+              justify-content: center;
+              height: 30px;
+             a{
+                 font-size: 16px;
+                 color:black;
+             }
+     }
+}
+section{
+    width: 100%;
+        #news_T{
+              display: flex;
+                  span{
+                      display: flex;
+                          height: 40px;
+                           align-items:center;                    
+                            flex: 1;                         
+                              a{
+                                  font-size:20px;
+                                  color: #129bf0;
+                                  font-weight:600;
+                                  margin-left: 8px;
+                              }                 
+                  }
+        }
+        
+        #gjNew_L{
+             width: 100%;
+              ul{
+                  width: 100%;
+                  
+                  li{
+                      width: 100%;
+                      border-bottom: 1px dotted #ccc;    
+                      margin-bottom:3px;        
+//                    border: 1px solid green;
+                     margin-top: -19px;
+                        a{
+                            width: 100%;                        
+                            display: block;
+                                    
+                            div{
+                                display: flex;
+                                width: 100%;
+                                height:94px; 
+                               
+                                     &:nth-child(1){
+                                            display: flex;
+                                            flex: 1.3;
+                                            margin: 3px;
+//                                          border: 1px solid yellow;
+                                               img{
+                                                   width: 100%;
+                                                   height: 100%;
+                                               }
+                                      }
+                                      &:nth-child(2){
+                                           display: flex;
+                                           flex: 2.7;
+//                                         border: 1px solid red;
+                                           margin-left: 3px;
+                                           margin-top: 3px;
+                                           height: 100%;
+                                                    div{
+                                                          display:block;
+                                                          position: relative;
+                                                             h3{
+                                                         
+                                                            line-height: 22px;
+                                                             font-size: 14px;
+//                                                           border: 1px solid green;
+                                                             text-indent: 2em;
+                                                         }
+                                                         p{
+                                                             position: absolute;
+                                                             bottom: 1em;
+                                                             right: 1em;
+                                                              height:16px;
+                                                             font-size: 10px;
+                                                             color: #666;
+//                                                           border: 1px solid red;
+                                                         }
+                                                }
+                                                
+                                      }
+                            }
+                        }
+                  }
+              }
+        }
+       
+       
+       #gjNew_R{
+             width: 100%;
+              ul{
+                  width: 100%;
+                  
+                  li{
+                      width: 100%;
+                      border-bottom: 1px dotted #ccc;    
+                      margin-bottom:3px;        
+//                    border: 1px solid green;
+                     margin-top: -19px;
+                        a{
+                            width: 100%;                        
+                            display: block;
+                                    
+                            div{
+                                display: flex;
+                                width: 100%;
+                                height:94px; 
+                               
+                                     &:nth-child(1){
+                                            display: flex;
+                                            flex: 1.3;
+                                            margin: 3px;
+//                                          border: 1px solid yellow;
+                                               img{
+                                                   width: 100%;
+                                                   height: 100%;
+                                               }
+                                      }
+                                      &:nth-child(2){
+                                           display: flex;
+                                           flex: 2.7;
+//                                         border: 1px solid red;
+                                           margin-left: 3px;
+                                           margin-top: 3px;
+                                           height: 100%;
+                                                    div{
+                                                          display:block;
+                                                          position: relative;
+                                                             h3{
+                                                         
+                                                            line-height: 22px;
+                                                             font-size: 14px;
+//                                                           border: 1px solid green;
+                                                             text-indent: 2em;
+                                                         }
+                                                         p{
+                                                             position: absolute;
+                                                             bottom: 1em;
+                                                             right: 1em;
+                                                              height:16px;
+                                                             font-size: 10px;
+                                                             color: #666;
+//                                                           border: 1px solid red;
+                                                         }
+                                                }
+                                                
+                                      }
+                            }
+                        }
+                  }
+              }
+        }
+
+
+}
+
+
+
+
+
+section{
+     width: 100%;
+        #lunbotu_M{
+            width: 100%;       
+          
+                 .swiper-wrapper{
+                       width: 100%;
+                          .swiper-slide{
+                       
+                                   img{
+                                         width: 100%;
+                                          height: 150px;
+                                   }  
+                          }
+                 }
+                 .swiper-pagination{
+                   
+                      color: white;
+                 }
+                      
+        }
+}
+
+
+section{
+    width: 100%;
+        #tiyu_T{
+              display: flex;
+                  span{
+                      display: flex;
+                          height: 40px;
+                          align-items:center; 
+                      &:nth-child(1){
+                            flex: 6;                         
+                              a{
+                                  font-size:20px;
+                                  color: #129bf0;
+                                  font-weight:600;
+                                  margin-left: 8px;
+                              }
+                      } 
+                       &:nth-child(2){
+                            flex: 1.5;                           
+                                a{
+                                  font-size:16px;
+                                  color: #129bf0;
+                                   font-weight:600;
+                              }
+                      } 
+                       &:nth-child(3){
+                            flex: 1.5;                        
+                                a{
+                                  font-size:16px;
+                                  color: #129bf0;
+                                   font-weight:600;
+                              }
+                      } 
+                       &:nth-child(4){
+                            flex: 1.5;                           
+                               a{
+                                  font-size:16px;
+                                  color: #129bf0;
+                                   font-weight:600;
+                              }
+                      } 
+                  }
+        }
+         #tiyu_M{
+            width: 100%;       
+//          border: 1px solid green;
+                 .swiper-wrapper{
+                       width: 100%;
+                          .swiper-slide{
+//                             border: 1px solid red;                         
+                                   img{
+                                         width: 100%;
+                                          height: 96px;
+                                   }  
+                          }
+                 }
+                      
+        }
+        #tiyu_L{
+             width: 100%;
+              ul{
+                  width: 100%;
+                  
+                  li{
+                      width: 100%;
+                      border-bottom: 1px dotted #ccc;    
+                      margin-bottom:3px;        
+//                    border: 1px solid green;
+                     margin-top: -19px;
+                        a{
+                            width: 100%;                        
+                            display: block;
+                                    
+                            div{
+                                display: flex;
+                                width: 100%;
+                                height:94px; 
+                               
+                                     &:nth-child(1){
+                                            display: flex;
+                                            flex: 1.3;
+                                            margin: 3px;
+//                                          border: 1px solid yellow;
+                                               img{
+                                                   width: 100%;
+                                                   height: 100%;
+                                               }
+                                      }
+                                      &:nth-child(2){
+                                           display: flex;
+                                           flex: 2.7;
+//                                         border: 1px solid red;
+                                           margin-left: 3px;
+                                           margin-top: 3px;
+                                           height: 100%;
+                                                    div{
+                                                          display:block;
+                                                          position: relative;
+                                                             h3{
+                                                         
+                                                            line-height: 22px;
+                                                             font-size: 14px;
+//                                                           border: 1px solid green;
+                                                             text-indent: 2em;
+                                                         }
+                                                         p{
+                                                             position: absolute;
+                                                             bottom: 1em;
+                                                             right: 1em;
+                                                              height:16px;
+                                                             font-size: 10px;
+                                                             color: #666;
+//                                                           border: 1px solid red;
+                                                         }
+                                                }
+                                                
+                                      }
+                            }
+                        }
+                  }
+              }
+        }
+        .LoadMore{
+              width: 100%;
+              height: 36px;
+              line-height: 36px;
+              div{
+                  width: 100%;
+//                border: 1px solid red;
+                   text-align: center;
+              }
+              
+              
+        }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

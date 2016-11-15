@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+a {
+  color: #666;
+  font-size: 1.6em;
+  text-decoration: none;
+}
+
+.ad_top {
+  width: 100%;
+}
+
+.ad_top a {
+  display: block;
+  width: 100%;
+}
+
+.ad_top a img {
+  width: 100%;
+  height: 120px;
+}
+
+.nav, .nav2 {
+  width: 100%;
+  display: flex;
+}
+
+.nav span, .nav2 span {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  justify-content: center;
+  height: 30px;
+}
+
+.nav span a, .nav2 span a {
+  font-size: 16px;
+  color: black;
+}
+
+section {
+  width: 100%;
+}
+
+section #news_T {
+  display: flex;
+}
+
+section #news_T span {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  flex: 1;
+}
+
+section #news_T span a {
+  font-size: 20px;
+  color: #129bf0;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+section #gjNew_L {
+  width: 100%;
+}
+
+section #gjNew_L ul {
+  width: 100%;
+}
+
+section #gjNew_L ul li {
+  width: 100%;
+  border-bottom: 1px dotted #ccc;
+  margin-bottom: 3px;
+  margin-top: -19px;
+}
+
+section #gjNew_L ul li a {
+  width: 100%;
+  display: block;
+}
+
+section #gjNew_L ul li a div {
+  display: flex;
+  width: 100%;
+  height: 94px;
+}
+
+section #gjNew_L ul li a div:nth-child(1) {
+  display: flex;
+  flex: 1.3;
+  margin: 3px;
+}
+
+section #gjNew_L ul li a div:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+}
+
+section #gjNew_L ul li a div:nth-child(2) {
+  display: flex;
+  flex: 2.7;
+  margin-left: 3px;
+  margin-top: 3px;
+  height: 100%;
+}
+
+section #gjNew_L ul li a div:nth-child(2) div {
+  display: block;
+  position: relative;
+}
+
+section #gjNew_L ul li a div:nth-child(2) div h3 {
+  line-height: 22px;
+  font-size: 14px;
+  text-indent: 2em;
+}
+
+section #gjNew_L ul li a div:nth-child(2) div p {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  height: 16px;
+  font-size: 10px;
+  color: #666;
+}
+
+section #gjNew_R {
+  width: 100%;
+}
+
+section #gjNew_R ul {
+  width: 100%;
+}
+
+section #gjNew_R ul li {
+  width: 100%;
+  border-bottom: 1px dotted #ccc;
+  margin-bottom: 3px;
+  margin-top: -19px;
+}
+
+section #gjNew_R ul li a {
+  width: 100%;
+  display: block;
+}
+
+section #gjNew_R ul li a div {
+  display: flex;
+  width: 100%;
+  height: 94px;
+}
+
+section #gjNew_R ul li a div:nth-child(1) {
+  display: flex;
+  flex: 1.3;
+  margin: 3px;
+}
+
+section #gjNew_R ul li a div:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+}
+
+section #gjNew_R ul li a div:nth-child(2) {
+  display: flex;
+  flex: 2.7;
+  margin-left: 3px;
+  margin-top: 3px;
+  height: 100%;
+}
+
+section #gjNew_R ul li a div:nth-child(2) div {
+  display: block;
+  position: relative;
+}
+
+section #gjNew_R ul li a div:nth-child(2) div h3 {
+  line-height: 22px;
+  font-size: 14px;
+  text-indent: 2em;
+}
+
+section #gjNew_R ul li a div:nth-child(2) div p {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  height: 16px;
+  font-size: 10px;
+  color: #666;
+}
+
+section {
+  width: 100%;
+}
+
+section #lunbotu_M {
+  width: 100%;
+}
+
+section #lunbotu_M .swiper-wrapper {
+  width: 100%;
+}
+
+section #lunbotu_M .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 150px;
+}
+
+section #lunbotu_M .swiper-pagination {
+  color: white;
+}
+
+section {
+  width: 100%;
+}
+
+section #tiyu_T {
+  display: flex;
+}
+
+section #tiyu_T span {
+  display: flex;
+  height: 40px;
+  align-items: center;
+}
+
+section #tiyu_T span:nth-child(1) {
+  flex: 6;
+}
+
+section #tiyu_T span:nth-child(1) a {
+  font-size: 20px;
+  color: #129bf0;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+section #tiyu_T span:nth-child(2) {
+  flex: 1.5;
+}
+
+section #tiyu_T span:nth-child(2) a {
+  font-size: 16px;
+  color: #129bf0;
+  font-weight: 600;
+}
+
+section #tiyu_T span:nth-child(3) {
+  flex: 1.5;
+}
+
+section #tiyu_T span:nth-child(3) a {
+  font-size: 16px;
+  color: #129bf0;
+  font-weight: 600;
+}
+
+section #tiyu_T span:nth-child(4) {
+  flex: 1.5;
+}
+
+section #tiyu_T span:nth-child(4) a {
+  font-size: 16px;
+  color: #129bf0;
+  font-weight: 600;
+}
+
+section #tiyu_M {
+  width: 100%;
+}
+
+section #tiyu_M .swiper-wrapper {
+  width: 100%;
+}
+
+section #tiyu_M .swiper-wrapper .swiper-slide img {
+  width: 100%;
+  height: 96px;
+}
+
+section #tiyu_L {
+  width: 100%;
+}
+
+section #tiyu_L ul {
+  width: 100%;
+}
+
+section #tiyu_L ul li {
+  width: 100%;
+  border-bottom: 1px dotted #ccc;
+  margin-bottom: 3px;
+  margin-top: -19px;
+}
+
+section #tiyu_L ul li a {
+  width: 100%;
+  display: block;
+}
+
+section #tiyu_L ul li a div {
+  display: flex;
+  width: 100%;
+  height: 94px;
+}
+
+section #tiyu_L ul li a div:nth-child(1) {
+  display: flex;
+  flex: 1.3;
+  margin: 3px;
+}
+
+section #tiyu_L ul li a div:nth-child(1) img {
+  width: 100%;
+  height: 100%;
+}
+
+section #tiyu_L ul li a div:nth-child(2) {
+  display: flex;
+  flex: 2.7;
+  margin-left: 3px;
+  margin-top: 3px;
+  height: 100%;
+}
+
+section #tiyu_L ul li a div:nth-child(2) div {
+  display: block;
+  position: relative;
+}
+
+section #tiyu_L ul li a div:nth-child(2) div h3 {
+  line-height: 22px;
+  font-size: 14px;
+  text-indent: 2em;
+}
+
+section #tiyu_L ul li a div:nth-child(2) div p {
+  position: absolute;
+  bottom: 1em;
+  right: 1em;
+  height: 16px;
+  font-size: 10px;
+  color: #666;
+}
+
+section .LoadMore {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+}
+
+section .LoadMore div {
+  width: 100%;
+  text-align: center;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>ShpowAPI</title>
+	    <link rel="stylesheet" type="text/css" href="css/swiper.css"/>
+	    <link rel="stylesheet" type="text/css" href="css/new.mins.css"/>
+	</head
+	<body>
+		<header>
+			
+		</header>
+		<nav id="nav">
+			 
+		</nav>
+		<section id="content">
+			     <!--<ul class="gjNew">
+			     	<li>
+			     		 <div>
+			     		 	    <h3><a href="#">4个字解读习近平个字解读习近习近平个字解读习近平习近平个字解读习近平平个字解读习近平个字解读习近平个字解读习近平</a></h3>
+			     		 	    <p><span>来源</span></p>
+			     		 </div>
+			     		 <div>
+			     		 	   <img src="img/mm004.jpg" />
+			     		 </div>
+			     	</li>
+			     </ul>-->
+		</section>
+	</body>
+	   <script src="js/jquery-1.12.0.js"></script>
+	   <script src="js/swiper.js"></script>
+	   <script src="js/zepto.js"></script>
+	   
+	   <script>
+	              jQuery(document).ready(function(){
+	              	 
+	               	      $.ajax({
+	   	      	        	type:"get",
+	   	      	        	url:"http://apis.baidu.com/showapi_open_bus/channel_news/search_news",
+	   	      	        	headers:{
+	   	      	        		 apikey:"89646a0bc91f88fa1574b6106657faa5",
+	   	      	        	},
+	   	      	        	data:{
+	   	      	        		maxResult:25,
+	   	      	        	},
+	   	      	        	success:function(res){
+	   	      	        		  console.log(res);
+	   	      	        		  var $content=$('#content');
+//                                  
+	   	      	        		  var $ul=$('<ul/>').addClass("gjNew").appendTo($content);
+	   	      	        		  res.showapi_res_body.pagebean.contentlist.forEach(function(item){
+//	   	      	        		  	      console.log(item);
+	   	      	        		  	      var $li=$('<li/>').addClass("oLi");
+	   	      	        		  	      var $div=$('<div/>').appendTo($li);
+	   	      	        		  	       $('<h3>/').appendTo($div).append('<a href="'+item.link+'">'+item.title+'</a>');
+	   	      	        		  	      
+	   	      	        		  	      $("<p/>").appendTo($div).append('<span>'+item.source+'</span>')
+	   	      	        		  	      $ul.append($li);
+	   	      	        		  	      
+	   	      	        		  	      var $div=$('<div/>').appendTo($li);
+	   	      	        		  	      $('<img src="'+item.link+'"/>').appendTo($div);
+	   	      	        		  	       
+	   	      	        		  	       
+	   	      	        		  })
+	   	      	        		  
+//	   	      	        		
+	   	      	        		  
+	   	      	        		  
+	   	      	        		  
+	   	      	        		     
+	   	      	        	}
+	   	      	        });
+	               	
+	               })
+	   	      	       
+	   	      
+	   </script>
+</html>
