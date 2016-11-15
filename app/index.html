@@ -2,219 +2,325 @@
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width,initial-scale=1" />
-		<title>show新闻</title>
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<title>体育新闻</title>
 		<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
-		<link rel="stylesheet" type="text/css" href="css/index.mins.css"/>
 		<link rel="stylesheet" type="text/css" href="css/swiper_H.css"/>
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+	    <script src="lis/jquery.js"></script>
+		<script src="js/swiper.js"></script>
 		<style>
-		
-		*{
-		    margin: 0;
-		    padding: 0;
-		    border: none;
-		    font-size: 62.5%;
-		}
-		a{      
-			  text-decoration: none;
-			 
-		}
-			  section{
-			  	 
-			  }
-			  section header{
-			  	display: flex;
-			  	border: 1px solid red;
-			  	
-			  }
-			  section header {
-			  	   width: 100%;
-			  	   display: flex;
-			  }
-			   section header span{
-			    display: flex;
-			   	height: 30px;
-			   	 flex: 1;
-			   	 justify-content: center;
-			  	align-items: center;
-			   	 /*border: 1px solid red;*/
-			   }
-			  
-			   
-			   #lunbotu_H{
-				    width: 100%;
-				    height: 450px;
+			 /*.swiper-container {
+				    width: 600px;
+				    height: 200px;
 				    border: 1px solid green;
 				}  
-				  #lunbotu_H img{
-				  	 width: 100%;
-				  	 height: 100%;
-				  }
-				  #content{
-				  	width: 100%;
-				  }
-				  title{
-				  	 display: block;
-				  	  height: 30px;
-				  	  line-height: 30px;
-				  	 border-bottom: 1px dotted #ccc;
-				  }
-				 
-				
+			.swiper-wrapper	.swiper-slide{
+				     border: 1px solid red;
+			}
+			.swiper-wrapper	.swiper-slide img{
+				    width: 100%;
+				    height: 100%;
+			}*/
 		</style>
 	</head>
 	<body>
+		<!--顶部广告-->	
+	     <div class="ad_top">
+	     	  <a href="#"><img src="img/ad_top.JPG"/></a>
+	     </div>
+	     <!--顶部导航栏-->
+	     <div class="nav">
+	     	   <span><a href="#">新闻</a></span>
+		  	   <span><a href="#">财经</a></span>
+		  	   <span><a href="#">体育</a></span>
+		  	   <span><a href="#">娱乐</a></span>
+		  	   <span><a href="#">军事</a></span>	
+	     </div>
+	     <div class="nav2">
+	     	   <span><a href="#">科技</a></span>
+		  	   <span><a href="#">博客</a></span>
+		  	   <span><a href="#">视频</a></span>
+		  	   <span><a href="#">汽车</a></span>
+		  	   <span><a href="#">房产</a></span>	
+	     </div>
+		<!--广告轮播图-->				
 		<section>
-			  <header id="lunbotu_T">		  	
-			  	  	  <span><a href="#">新闻</a></span>
-				  	   <span><a href="#">财经</a></span>
-				  	   <span><a href="#">体育</a></span>
-				  	   <span><a href="#">娱乐</a></span>
-				  	   <span><a href="#">军事</a></span>	
-			  				  	   
-			  </header>
-			   <div class="swiper-container" id="lunbotu_H">
+			  <div class="swiper-container" id="lunbotu_M">
 				    <div class="swiper-wrapper">
-				        <div class="swiper-slide"><img src="img/1.jpg"/></div>
-				         <div class="swiper-slide"><img src="img/2.png"/></div>
-				          <div class="swiper-slide"><img src="img/3.jpg"/></div>
-				          <div class="swiper-slide"><img src="img/4.png"/></div>
-				          <div class="swiper-slide"><img src="img/5.jpg"/></div>
-				    </div>
-				    <!-- 如果需要分页器 -->
-				    <!--<div class="swiper-pagination"></div>-->
-				    
-				  
-				</div>
+				       <div class="swiper-slide"><img src="img/ad001.JPG"/></div>
+				       <div class="swiper-slide"><img src="img/ad002.JPG"/></div>
+				       <div class="swiper-slide"><img src="img/ad003.JPG"/></div>
+				       <div class="swiper-slide"><img src="img/ad004.JPG"/></div>
+				       <div class="swiper-slide"><img src="img/ad005.JPG"/></div>
+				       <div class="swiper-slide"><img src="img/ad006.JPG"/></div>
+				       <div class="swiper-slide"><img src="img/ad007.JPG"/></div>
+				       <div class="swiper-slide"><img src="img/ad008.JPG"/></div>
+				       <div class="swiper-slide"><img src="img/ad009.JPG"/></div>
+				        <div class="swiper-slide"><img src="img/ad010.JPG"/></div>
+				 </div>	
+				 <!-- 如果需要分页器 -->
+                 <div class="swiper-pagination"></div>
+			</div>
+		<script>
+				 jQuery(document).ready(function(){
+				 	   var mySwiper = new Swiper ('#lunbotu_M',{
+				        	   	    /*方向*/								    
+								  direction: 'horizontal',
+								  autoplay:5000,
+								    loop: true,
+								    // 如果需要分页器
+								    pagination : '.swiper-pagination',
+                                    paginationType : 'bullets'
+								  
+								  })
+							
+				 })
+		</script>	
+		</section>
+		
+		<!--今日新闻-->
+	  <section>
+		  	<header id="tiyu_T">
+		  		 <span><a href="#">今日新闻</a></span>
+		  		  <span><a href="#">视频</a></span>
+		  		   <span><a href="#">社会</a></span>
+		  		    <span><a href="#">智库</a></span>
+		  	</header>
+			<div class="swiper-container" id="tiyu_M">
+				    <div class="swiper-wrapper">
+				       <div class="swiper-slide"><img src="img/img001.JPG"/></div>
+				       <div class="swiper-slide"><img src="img/img002.JPG"/></div>
+				       <div class="swiper-slide"><img src="img/img003.JPG"/></div>
+				       <div class="swiper-slide"><img src="img/img004.JPG"/></div>
+				       <div class="swiper-slide"><img src="img/img005.JPG"/></div>
+				       <div class="swiper-slide"><img src="img/img006.JPG"/></div>
+				       <div class="swiper-slide"><img src="img/img007.JPG"/></div>
+				       <div class="swiper-slide"><img src="img/img008.JPG"/></div>
+				       <div class="swiper-slide"><img src="img/img009.JPG"/></div>
+				       <div class="swiper-slide"><img src="img/img010.JPG"/></div>				       				       
+				 </div>				 
+			</div>
+			<div id="tiyu_L">
+				   <!--<ul>
+		       	   <li><a href="#">
+	       	   	          <div>
+			       	   	       <div><img src="#"/></div>
+			       	   	     <div>
+			       	   	     	 <h3>李大大李大大李大大李大大李大大</h3>
+			       	   	     	 <p>来源</p>
+			       	   	     </div> 
+			       	   	  </div>  
+		       	       </a>		       	   	  
+		       	   </li>
+		      </ul>-->	
+			</div>
+			<div class="LoadMore">
+				<div class="neirong_l">展开更多&nbsp;<span class="iconfont icon-moreunfold tubiao_l"></span></div>
 				
-			    <div id="content">
-			    	    <!--<title><a href="#"></a></title>-->
-			    	    
-			    </div>
-					 				
-		</section>
-		      
-		<section>
-			 <header id="toutiao_T">
-		       	    <span>今日头条</span>
-		       </header>
-		       
-			       <div class="swiper-container" id="toutiao_H">
-					    <div class="swiper-wrapper">
-					        <div class="swiper-slide" id="gjNew"></div>
-					        <div class="swiper-slide" id="gjNew2"></div>
-					       
-					    </div>
-					     <!--如果需要分页器--> 
-					    <div class="swiper-pagination"></div>
-					
-					 
-	             </div>		      
-		</section>
-		
-		
-	  <script src="js/jquery-1.12.0.js"></script>
-		<script src="lis/zepto.js"></script>	
-		<script src="js/swiper.js"></script>
-		<script>
-               jQuery(document).ready(function(){
-               	
-               	       /*今日头条left*/  
-               	        $.ajax({
-               	        	type:"get",
-               	        	url:"http://apis.baidu.com/txapi/world/world",
-               	        	headers:{
-               	        		 apikey:"89646a0bc91f88fa1574b6106657faa5",
-               	        	},
-               	        	data:{
-               	        	    num:10,	 
-               	        	},
-               	        	success:function(res){
-               	        		 console.log(res);
-               	        		    var $gjNew=$('#gjNew');
-               	        		 var $ul=$('<ul/>').appendTo($gjNew);
+			</div>
+		<!--今日新闻-->
+			<script>        
+			        jQuery(document).ready(function(){
+			        	   var mySwiper = new Swiper ('#tiyu_M',{
+			        	   	    /*方向*/
+							    direction: 'horizontal',
+							    loop: true,
+							    speed:100,
+							    /*没有抵抗反弹*/
+							    freeMode : true,
+							    /*分层两个*/
+						         slidesPerView : 2,
+						         /*盒子间的距离*/
+						         spaceBetween : 8,
+                                 centeredSlides : true
+							  })    
+							  
+							   $.ajax({
+							  	type:"get",
+							  	url:"http://apis.baidu.com/txapi/tiyu/tiyu",
+							    headers:{
+							    	apikey:"89646a0bc91f88fa1574b6106657faa5",
+							    },
+							    data:{
+							    	 num:10,
+							    	 page:1,
+							    },
+							    success:function(res){
+//							    	  console.log(res);
+               	        		    var $tiyu_L=$('#tiyu_L');
+               	        		      
+               	        		 var $ul=$('<ul/>').appendTo($tiyu_L);
+               	        		            	        		 
                	        		 res.newslist.forEach(function(item){
-//             	        		 	    console.log(item);
+               	        		 	    console.log(item);
                	        		 	    var $li=$('<li/>').appendTo($ul);
                	        		 	    var $a=$('<a/>').attr({href:item.url}).appendTo($li);
                	        		 	    var $div2=$('<div/>').appendTo($a);
                	        		 	    
                	        		 	    $('<div/>').append('<img src="'+item.picUrl+'"/>').appendTo($div2);
                	        		 	    
-               	        		 	    var $div=$('<div/>').appendTo($div2).append('<h3>'+item.title+'</h3>');
-               	        		 	    $('<p/>').html(item.description).appendTo($div);
-               	        		 })
-               	        	}
-               	        });
-//             	        
-               	        
-               	      /*今日头条right*/  
-               	     $.ajax({
-               	        	type:"get",
-               	        	url:"http://apis.baidu.com/txapi/keji/keji",
-               	        	headers:{
-               	        		 apikey:"89646a0bc91f88fa1574b6106657faa5",
-               	        	},
-               	        	data:{
-               	        	    num:10,	 
-               	        	},
-               	        	success:function(res){
-               	        		 console.log(res);
-               	        		    var $gjNew2=$('#gjNew2');
-               	        		 var $ul=$('<ul/>').appendTo($gjNew2);
-               	        		 res.newslist.forEach(function(item){
-//             	        		 	    console.log(item);
-               	        		 	    var $li=$('<li/>').appendTo($ul);
-               	        		 	    var $a=$('<a/>').attr({href:item.url}).appendTo($li);
-               	        		 	    var $div2=$('<div/>').appendTo($a);
-               	        		 	     
-               	        		 	    $('<div/>').append('<img src="'+item.picUrl+'"/>').appendTo($div2);
+               	        		 	    var $div3=$('<div/>').appendTo($div2);
                	        		 	    
-               	        		 	    var $div=$('<div/>').appendTo($div2).append('<h3>'+item.title+'</h3>');
+               	        		 	    var $div=$('<div/>').appendTo($div3).append('<h3>'+item.title+'</h3>');
                	        		 	    $('<p/>').html(item.description).appendTo($div);
+//             	        		 	   
                	        		 })
-               	        	}
-               	        });
-               	        
 
-         })        
-		</script>
-		<script>
+							    }
+							  });
+							  
+							  var $neirong_l=$('.neirong_l');
+							  var $tubiao_l=$('.tubiao_l');
+							  var $LoadMore=$('.LoadMore');
+							  var index=2; 
+							  /*添加点击事件*/
+							  $LoadMore.on("click",function(){
+					            if(index<4){           
+						 	  $.ajax({
+							  	type:"get",
+							  	url:"http://apis.baidu.com/txapi/tiyu/tiyu",
+							    headers:{
+							    	apikey:"89646a0bc91f88fa1574b6106657faa5",
+							    },
+							    data:{
+							    	 num:10,
+							    	 page:index,
+							    },
+							    success:function(res){
+//							    	  console.log(res);
+               	        		    var $tiyu_L=$('#tiyu_L');
+               	        		      
+               	        		 var $ul=$('<ul/>').appendTo($tiyu_L);
+               	        		            	        		 
+               	        		 res.newslist.forEach(function(item){
+               	        		 	    console.log(item);
+               	        		 	    var $li=$('<li/>').appendTo($ul);
+               	        		 	    var $a=$('<a/>').attr({href:item.url}).appendTo($li);
+               	        		 	    var $div2=$('<div/>').appendTo($a);
+               	        		 	    
+               	        		 	    $('<div/>').append('<img src="'+item.picUrl+'"/>').appendTo($div2);
+               	        		 	    
+               	        		 	    var $div3=$('<div/>').appendTo($div2);
+               	        		 	    
+               	        		 	    var $div=$('<div/>').appendTo($div3).append('<h3>'+item.title+'</h3>');
+               	        		 	    $('<p/>').html(item.description).appendTo($div);
+//             	        		 	     
+               	        		 })
+//             	        		       $li.scrollIntoView();
+							    }
+							  });
+							  index++;
+					         console.log(index);
+					       
+					         	
+					         }else{
+					         	$neirong_l.html("加载完毕");
+					         	$tubiao_l.remove();
+					         }
+						  })	  
+					        	
+			        })
+					 
+		  </script>			
+	</section>	
+	     <!--今日头条-->
+		 <section>
+			  	<header id="news_T">
+			  		 <span><a href="#">今日头条</a></span>		  		 
+			  	</header>
+		  		<div class="swiper-container" id="gjNew_T">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide" id="gjNew_L"></div>
+				        <div class="swiper-slide" id="gjNew_R"></div>
+				    </div>   
+				    
+				</div>
+		  		
+			
+			 <script>
+			 	   jQuery(document).ready(function(){
+			 	   	     /*swiper效果*/
+			 	   	        var mySwiper = new Swiper ('#gjNew_T', {
+						    direction: 'horizontal',
+						    loop: true,						    
+						    // 如果需要分页器
+						    pagination: '.swiper-pagination',
+						  })   
+					
+			 	   	      /*左侧*/
+			 	   	     $.ajax({
+							  	type:"get",
+							  	url:"http://apis.baidu.com/txapi/world/world",
+							    headers:{
+							    	apikey:"89646a0bc91f88fa1574b6106657faa5",
+							    },
+							    data:{
+							    	 num:10,
+							    	 page:1,
+							    },
+							    success:function(res){
+//							    	  console.log(res);
+               	        		    var $gjNew_L=$('#gjNew_L');  	        		      
+               	        		 var $ul=$('<ul/>').appendTo($gjNew_L);
+               	        		            	        		 
+               	        		 res.newslist.forEach(function(item){
+               	        		 	    console.log(item);
+               	        		 	    var $li=$('<li/>').appendTo($ul);
+               	        		 	    var $a=$('<a/>').attr({href:item.url}).appendTo($li);
+               	        		 	    var $div2=$('<div/>').appendTo($a);
+               	        		 	    
+               	        		 	    $('<div/>').append('<img src="'+item.picUrl+'"/>').appendTo($div2);
+               	        		 	    
+               	        		 	    var $div3=$('<div/>').appendTo($div2);
+               	        		 	    
+               	        		 	    var $div=$('<div/>').appendTo($div3).append('<h3>'+item.title+'</h3>');
+               	        		 	    $('<p/>').html(item.description).appendTo($div);
+//             	        		 	   
+               	        		  })
+
+							    }
+							});
+							
+							/*右侧*/
+							$.ajax({
+							  	type:"get",
+							  	url:"http://apis.baidu.com/txapi/world/world",
+							    headers:{
+							    	apikey:"89646a0bc91f88fa1574b6106657faa5",
+							    },
+							    data:{
+							    	 num:10,
+							    	 page:2,
+							    },
+							    success:function(res){
+//							    	  console.log(res);
+               	        		    var $gjNew_R=$('#gjNew_R');  	        		      
+               	        		 var $ul=$('<ul/>').appendTo($gjNew_R);
+               	        		            	        		 
+               	        		 res.newslist.forEach(function(item){
+               	        		 	    console.log(item);
+               	        		 	    var $li=$('<li/>').appendTo($ul);
+               	        		 	    var $a=$('<a/>').attr({href:item.url}).appendTo($li);
+               	        		 	    var $div2=$('<div/>').appendTo($a);
+               	        		 	    
+               	        		 	    $('<div/>').append('<img src="'+item.picUrl+'"/>').appendTo($div2);
+               	        		 	    
+               	        		 	    var $div3=$('<div/>').appendTo($div2);
+               	        		 	    
+               	        		 	    var $div=$('<div/>').appendTo($div3).append('<h3>'+item.title+'</h3>');
+               	        		 	    $('<p/>').html(item.description).appendTo($div);
+//             	        		 	   
+               	        		  })
+
+							    }
+							});
+							
+			 	   	   
+			 	   })
+			 </script>
+			
+		 </section>	  
 		
-		   	     var mySwiper = new Swiper ('#lunbotu_H', {
-			    direction: 'horizontal',
-			    loop: true,
-			    autoplay : 1000,
-			    // 如果需要分页器
-			    pagination: '.swiper-pagination',
-			    
-			    // 如果需要前进后退按钮
-//			    nextButton: '.swiper-button-next',
-//			    prevButton: '.swiper-button-prev',
-			    
-			    // 如果需要滚动条
-//			    scrollbar: '.swiper-scrollbar'
-		   	
-		   })
-			  
-			         
-		  </script>
-		  <script>      	 
-		   	    var mySwiper = new Swiper ('#toutiao_H', {
-			    direction: 'horizontal',
-			    loop: true,
-			   
-			    // 如果需要分页器
-			    pagination: '.swiper-pagination',
-			    
-			    // 如果需要前进后退按钮
-//			    nextButton: '.swiper-button-next',
-//			    prevButton: '.swiper-button-prev',
-			    
-			    // 如果需要滚动条
-//			    scrollbar: '.swiper-scrollbar',
-			  })        			  
-		  </script>
-	
 	</body>
 </html>
