@@ -4,9 +4,13 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width,initial-scale=1"/>
 		<title>体育新闻</title>
+		
 		<link rel="stylesheet" type="text/css" href="css/swiper.css"/>
 		<link rel="stylesheet" type="text/css" href="css/swiper_H.css"/>
 		<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="font_2/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="font_3/iconfont.css"/>
+		<link rel="stylesheet" type="text/css" href="lis/bootstrap/css/bootstrap.css"/>
 	    <script src="lis/jquery.js"></script>
 		<script src="js/swiper.js"></script>
 		<style>
@@ -28,6 +32,20 @@
 		<!--顶部广告-->	
 	     <div class="ad_top">
 	     	  <a href="#"><img src="img/ad_top.JPG"/></a>
+	     </div>
+	     <div class="header_T">
+	     	    <div>
+	     	    	<img src="img/show.jpg" />
+	     	    </div>
+	     	    <div>
+	     	    	
+	     	    </div>
+	     	    <div>
+	     	    	<span class="iconfont icon-denglu"></span>
+	     	    </div>
+	     	    <div>
+	     	    	<span class="iconfont icon-sanheng"></span>
+	     	    </div>
 	     </div>
 	     <!--顶部导航栏-->
 	     <div class="nav">
@@ -79,7 +97,7 @@
 		</script>	
 		</section>
 		
-		<!--今日新闻-->
+		<!--体育快讯-->
 	  <section>
 		  	<header id="tiyu_T">
 		  		 <span><a href="#">今日新闻</a></span>
@@ -176,7 +194,7 @@
 							  var index=2; 
 							  /*添加点击事件*/
 							  $LoadMore.on("click",function(){
-					            if(index<4){           
+					            if(index<6){           
 						 	  $.ajax({
 							  	type:"get",
 							  	url:"http://apis.baidu.com/txapi/tiyu/tiyu",
@@ -243,7 +261,7 @@
 			 	   	     /*swiper效果*/
 			 	   	        var mySwiper = new Swiper ('#gjNew_T', {
 						    direction: 'horizontal',
-						    loop: true,						    
+						  			    
 						    // 如果需要分页器
 						    pagination: '.swiper-pagination',
 						  })   
@@ -320,7 +338,34 @@
 			 	   })
 			 </script>
 			
-		 </section>	  
+		 </section>
+		 <section>
+		   <header id="life_T">
+			  		 <span><a href="#">生活</a></span>		  		 
+		</header>
+		  	 <div class="nav3">
+	     	   <div><a href="#"><span class="iconfont icon-gongzuo"></span><br/><span class="a1">找工作</span></a></div>
+		  	   <div><a href="#"><span class="iconfont icon-shendubaojie"></span><br/><span class="a1">二手房</span></a></div>
+		  	   <div><a href="#"><span class="iconfont icon-shouji"></span><br/><span class="a1">淘手机</span></a></div>
+		  	   <div><a href="#"><span class="iconfont icon-chezicheyou"><br/></span><span class="a1">二手车</span></a></div>
+		  	   <div><a href="#"><span class="iconfont icon-qianqian"><br/></span><span class="a1">找投资</span></a></div>	
+	     </div>
+	    
+		 </section>
+		 <section>
+		 	 <div class="nav4">
+	     	   <div><a href="#"><span class="iconfont icon-weixiu"></span><br/><span class="a1">找维修</span></a></div>
+		  	   <div><a href="#"><span class="iconfont icon-chezi1"></span><br/><span class="a1">租好车</span></a></div>
+		  	   <div><a href="#"><span class="iconfont icon-chezi001"></span><br/><span class="a1">找搬家</span></a></div>
+		  	   <div><a href="#"><span class="iconfont icon-jiatingbaoji"></span><br/><span class="a1">找保洁</span></a></div>
+		  	   <div><a href="#"><span class="iconfont icon-2"></span><br/><span class="a1">租好房</span></a></div>	
+	     </div>
+		 </section>
+		 <section id="footer_s">
+		       <div>导航</div>	
+		        <div>客户端</div>	
+		         <div>吐槽</div>	
+		 </section>
 		
 	</body>
 </html>

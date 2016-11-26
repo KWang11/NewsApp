@@ -4,53 +4,16 @@
   border: none;
 }
 
+ul li {
+  list-style: none;
+}
+
 a {
   color: #666;
   font-size: 1.6em;
   text-decoration: none;
 }
-ul li{
-	 /*list-style: none;*/
-}
-.header_T{
-	 width: 100%;
-	 height: 3.5rem;
-	 padding-bottom: 0.6rem;
-	 padding-top: 0.4rem;
-	 display: flex;
-	 background-color:#129bf0;
-}
-.header_T>div:nth-child(1){
-	padding-left: 0.4rem;
-	   width: 8rem;
-	   height: 100%;
-	   /*border: 1px solid red;*/
-}
-.header_T>div:nth-child(1) img{
-	    width: 8rem;
-	    height: 100%;
-}
-.header_T>div:nth-child(2){
-	   flex: 3.4;
-	    /*border: 1px solid green;*/
-}
-.header_T>div:nth-child(3){
-	  flex: 1;
-	   /*border: 1px solid red;*/
-}
-.header_T>div:nth-child(4){
-	  flex: 1;
-	   /*border: 1px solid yellow;*/
-}
 
-.header_T .iconfont{
-	   
-	    font-size: 2.6rem;
-	    color: white;
-	    /*border: 1px solid red;*/
-	    display: inline-block;
-	    padding-left: 1rem;
-}
 .ad_top {
   width: 100%;
 }
@@ -87,9 +50,48 @@ section {
   width: 100%;
 }
 
+section #life_T {
+  display: flex;
+}
+
+section #life_T span {
+  display: flex;
+  height: 40px;
+  align-items: center;
+  flex: 1;
+}
+
+section #life_T span a {
+  font-size: 20px;
+  color: #129bf0;
+  font-weight: 600;
+  margin-left: 8px;
+}
+
+section .nav3, section .nav4 {
+  width: 100%;
+  display: flex;
+}
+
+section .nav3 span, section .nav4 span {
+  display: flex;
+  width: 100%;
+  flex: 1;
+  justify-content: center;
+  height: 30px;
+}
+
+section .nav3 span a, section .nav4 span a {
+  font-size: 16px;
+  color: black;
+}
+
+section {
+  width: 100%;
+}
+
 section #news_T {
   display: flex;
-  border-top:1px solid #DDD;
 }
 
 section #news_T span {
@@ -118,12 +120,10 @@ section #gjNew_L ul li {
   width: 100%;
   border-bottom: 1px dotted #ccc;
   margin-bottom: 3px;
-  
   list-style: none;
+  margin-top: -19px;
 }
-section #gjNew_L ul li h3{
-color: black;
-}
+
 section #gjNew_L ul li a {
   width: 100%;
   display: block;
@@ -186,12 +186,10 @@ section #gjNew_R ul li {
   width: 100%;
   border-bottom: 1px dotted #ccc;
   margin-bottom: 3px;
- 
   list-style: none;
+  margin-top: -19px;
 }
-section #gjNew_R ul li h3{
-	 color: black;
-}
+
 section #gjNew_R ul li a {
   width: 100%;
   display: block;
@@ -345,9 +343,7 @@ section #tiyu_L ul li {
   margin-bottom: 3px;
   margin-top: -19px;
 }
-section #tiyu_L ul li h3{
-	   color: black;
-}
+
 section #tiyu_L ul li a {
   width: 100%;
   display: block;
@@ -408,120 +404,3 @@ section .LoadMore div {
   width: 100%;
   text-align: center;
 }
-
-
-section {
-	 width: 100%;
-}
-section #life_T{
-	 display: flex;
-	 padding-top: 1rem;
-	 border-top:1px solid #ddd ;
-}
-section #life_T span{
-	 display: flex;
-	 height: 40px;
-	 align-items: center;
-	 flex: 1;
-}
-
-section #life_T span a{
-	font-size: 20px;
-  color: #129bf0;
-  font-weight:600;
-   margin-left: 8px;
-}
-
-.nav3{	
-	 width: 100%;
-     display: flex;
-     /*border: 1px solid red;*/
-     height: 65px;
-}
-
-   .nav3>div{
-   	    display: flex;
-	      width: 100%;
-	      flex: 1;
-	     justify-content: center;
-	      height: 24px;
-	       text-align: center;
-   }
-.nav3 .iconfont{
-	   font-size: 2rem;
-	   color: #007AFF;
-}
-.nav3 span a{
-	       
-	        display: inline-block;
-           color:black;
-}
-.nav3 span{
-	 
-	  /*border:  1px solid red;*/
-}
-.nav3 .a1{
-	  color: black;
-	  font-size: 1.2rem;
-}
-//
-section{
-	  width: 100%;
-}
-
-.nav4{	
-	 width: 100%;
-     display: flex;
-      height: 65px;
-      /*border:  1px solid green;*/
-}
-
-   .nav4>div{
-   	    display: flex;
-	      width: 100%;
-	      flex: 1;
-	     justify-content: center;
-	      height: 24px;
-	       text-align: center;
-   }
-.nav4 .iconfont{
-	   font-size: 2rem;
-	   color: #007AFF;
-}
-.nav4 span a{
-	       
-	        display: inline-block;
-           color:black;
-}
-.nav4 span{
-	 
-	  /*border:  1px solid red;*/
-}
-.nav4 .a1{
-	  color: black;
-	  font-size: 1.2rem;
-}
-
-#footer_s{
-	 display: flex;
-	 width: 100%;
-	 height: 5rem;
-	 padding-top:1rem ;
-	 background-color:#129bf0 ;
-}
-#footer_s div{
-	 color: white;
-}
-#footer_s div:nth-child(1){
-	     flex: 2;
-	     text-align: right;
-}
-#footer_s div:nth-child(2){
-	     flex: 1.4;
-	     text-align: center;
-}
-#footer_s div:nth-child(3){
-	     flex: 2;
-}
-
-

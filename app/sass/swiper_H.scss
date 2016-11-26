@@ -4,6 +4,9 @@
     border: none;
 //  font-size: 62.5%;
 }
+ul li{
+    list-style: none;
+}
 a{
     color: #666;
     font-size: 1.6em;
@@ -36,6 +39,47 @@ a{
              }
      }
 }
+
+//生活
+
+section{
+     width: 100%;
+        #life_T{
+              display: flex;
+                span{
+                     display: flex;
+                     height: 40px;
+                     align-items: center;
+                     flex: 1;
+                     a{
+                          font-size: 20px;
+                          color: #129bf0;
+                          font-weight:600;
+                           margin-left: 8px;
+                     }
+                }
+        }
+        
+        .nav3,.nav4{
+     width: 100%;
+     display: flex;
+       span{
+              display: flex;
+              width: 100%;
+              flex: 1;
+              justify-content: center;
+              height: 30px;
+             a{
+                 font-size: 16px;
+                 color:black;
+             }
+     }
+}
+        
+        
+}
+
+
 section{
     width: 100%;
         #news_T{
@@ -62,7 +106,8 @@ section{
                   li{
                       width: 100%;
                       border-bottom: 1px dotted #ccc;    
-                      margin-bottom:3px;        
+                      margin-bottom:3px;   
+                      list-style: none;     
 //                    border: 1px solid green;
                      margin-top: -19px;
                         a{
@@ -128,7 +173,8 @@ section{
                   li{
                       width: 100%;
                       border-bottom: 1px dotted #ccc;    
-                      margin-bottom:3px;        
+                      margin-bottom:3px;
+                      list-style: none;        
 //                    border: 1px solid green;
                      margin-top: -19px;
                         a{
